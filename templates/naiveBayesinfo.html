@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/3/yeti/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+
+</head>
+
+<body>
+  <!-- Start of navbar -->
+  <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="/" id="logo">Home</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="naiveBayesinfo.html">Machine Learning Model Information</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+  <div class="container">
+      <div class="jumbotron">
+          <h1>Song Lyrics Classification</h1>
+
+          <p>This webpage utilizes a Naive Bayes machine learning model to classify songs as Hip-Hop or Not Hip-Hop based on their lyrics.</p>
+          <p>The model has been trained to yield 89% accuracy.</p>
+
+        </div>
+    <div class="row">
+      <div class="row">
+      <div class="col-md-12">
+        <form>
+          <div class="form-group">
+            <label for="example-form">Enter song lyrics to classify: </label>
+            <input class="form-control" id="example-form-input" name="example-form" type="text">
+          </div>
+          <button id="submit" type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Genre Classification:
+          <span></span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="/static/js/index.js"></script>
+
+</html>
